@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tip.css">
+    <title>TIP-CALCULATOR</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tip-calculate">
+            <h1>TIP CALCULATOR</h1>
+
+            <form action="#">
+                <!-- total amount  -->
+                <div class="amount">
+                    <p>WHAT IS YOUR TOTAL AMOUNT?</p>
+                    <input type="text" id="amount">
+                </div>
+                <!-- people number  -->
+                <div class="exprencie">
+                    <p>How is The Exprencie</p>
+                    <select id="expamount">
+        <option value="0" selected disabled>--Choose Any Option--</option>
+        <option value="0.3">OUTSTANDING</option>
+        <option value="0.2">Good</option>
+        <option value="0.1">Bad</option>
+        <option value="0.05">Very Bad</option>
+    </select>
+                </div>
+                <!-- total number of people -->
+                <div class="people-amount">
+                    <p>How Many People Are There</p>
+                    <input type="text" id="peopleamount">
+                </div>
+
+            </form>
+            <button id="calculate">CALCULATE</button>
+            <div id="totalTip">
+                <span id="tip"></span>
+                <small id="each">each</small>
+            </div>
+        </div>
+    </div>
+    <script src="tip.js"></script>
+</body>
+
+</html>
